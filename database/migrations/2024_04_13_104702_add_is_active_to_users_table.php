@@ -12,8 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->foreignId('role_id')->default(3)->constrained()
-                ->restrictOnDelete();
+            $table->boolean('is_active')->default(true);
         });
     }
 
@@ -23,8 +22,7 @@ return new class extends Migration
     public function down(): void
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->dropForeign('users_role_id_foreign');
-            $table->dropColumn('role_id');
+            $table->dropColumn('is_active');
         });
     }
 };
