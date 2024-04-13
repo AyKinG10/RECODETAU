@@ -161,12 +161,12 @@
         }
     </style>
 
-    <title>{{ config('app.name', 'HumanHelper') }}</title>
+    <title>{{ config('app.name', 'AlertMaster') }}</title>
 </head>
 <body>
 <nav>
     <div class="logo-name">
-        <a style="text-decoration: none" href="{{url('/')}}"><span style="font-size: 30px" class="logo_name">QamQor</span></a>
+        <a style="text-decoration: none" href="{{url('/')}}"><span style="font-size: 30px" class="logo_name">BackToHome</span></a>
     </div>
 
     <div class="menu-items">

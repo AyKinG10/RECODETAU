@@ -1,5 +1,6 @@
 @extends('layouts.app')
 @section('content')
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <header class="masthead">
         <div class="container position-relative">
             <div class="row justify-content-center">
@@ -61,7 +62,7 @@
     <section class="showcase">
         <div class="container-fluid p-0">
             <div class="row g-0">
-                <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('assets/css/img/bg-showcase-1.jpg')"></div>
+                <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url({{'assets/css/img/bg-showcase-1.jpg'}})"></div>
                 <div class="col-lg-6 order-lg-1 my-auto showcase-text">
                     <p>Шаг 1</p>
                     <h2>Зарегистрируйтесь</h2>
